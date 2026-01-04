@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +38,6 @@
       box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
     }
 
-    /* Custom Soothing Animations */
     .animate-float {
       animation: float 6s ease-in-out infinite;
     }
@@ -89,7 +87,6 @@
       scrollbar-width: none;
     }
 
-    /* Ensure all elements transition smoothly */
     * {
       transition: background-color 0.4s ease, border-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
     }
@@ -97,9 +94,9 @@
 <script type="importmap">
 {
   "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
     "react": "https://esm.sh/react@^19.2.3",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
     "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
     "d3": "https://esm.sh/d3@^7.9.0",
     "vite": "https://esm.sh/vite@^7.3.0",
@@ -107,7 +104,6 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
 <body class="gradient-bg min-h-screen relative">
   <!-- Soft Floating Blobs for Atmosphere -->
@@ -115,6 +111,8 @@
   <div class="fixed bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-blue-100/30 dark:bg-indigo-900/10 rounded-full blur-[100px] animate-breathe-slow pointer-events-none z-0" style="animation-delay: -5s;"></div>
   
   <div id="root" class="relative z-10"></div>
-<script type="module" src="/index.tsx"></script>
+  
+  <!-- Vite Entry Point -->
+  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
