@@ -1,0 +1,8 @@
+
+{
+  "name": "Arno's Peaceful Companion",
+  "description": "A soothing, AI-powered retreat designed to provide emotional support, validation, and calming exercises for Arno during stressful moments.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
